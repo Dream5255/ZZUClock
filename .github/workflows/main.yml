@@ -19,7 +19,4 @@ jobs:
       - name: Run
         env:
             ACCOUNT: ${{secrets.ACCOUNT}}
-        run: |
-            sudo cp -p chromedriver /usr/bin/
-            chmod -R 777 /usr/bin/chromedriver
-            python main.py
+        run: python main.py
